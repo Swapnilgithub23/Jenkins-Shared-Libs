@@ -1,4 +1,4 @@
-def call(string dc_name){
-   dependencyCheck additionalArguments: '--scan ./', odcInstallation: '${dc_name}'
+def call(String dcname){
+   dependencyCheck additionalArguments: '--scan ./', odcInstallation: '${dcname}'
    dependencyCheckPublisher pattern: '**/dependency-check-report.xml'
 }
