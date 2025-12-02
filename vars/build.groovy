@@ -1,3 +1,3 @@
 def call(){
-   sh "docker build -t online-shop-app ."
+    sh "docker build -t online-shop-app ."
 }
