@@ -1,3 +1,3 @@
 def call(){
-    sh "docker compose up -d"
+    sh "docker compose -f docker-compose1.yml up -d"
 }
