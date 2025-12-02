@@ -1,3 +1,3 @@
-def call(string ImageName){
-   sh "trivy image --format json --output trivy-image-scan-results.json ${ImageName}:latest"
+def call(){
+    sh "trivy image --format json --output trivy-image-scan-results.json online-shop-app:latest"
 }
