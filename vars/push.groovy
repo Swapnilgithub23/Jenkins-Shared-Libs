@@ -12,7 +12,6 @@ def call(Map config = [:]) {
     )]) {
         sh """
             echo "\$DOCKER_PASSWORD" | docker login -u "\$DOCKER_USERNAME" --password-stdin
-            docker image tag tws-app:latest swapnildocker23/tws-app:latest
             docker push ${imageName}:${imageTag}
             docker push ${imageName}:latest
         """
